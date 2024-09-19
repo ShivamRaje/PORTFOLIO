@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 </head>
 
-<body class="overflow-x-hidden font-Outfit leading-8">
-    <div class="fixed top-0  right-0  -z-10 w-full h-20 translate-y[-100%]">
+<body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
+    <!-- <div class="fixed top-0  right-0  -z-10 w-full h-20 translate-y[-100%]">
         <img src="./images/header1.jpg" alt="" class="w-full">
-    </div>
+    </div> -->
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         <img src="./images/letter-s.png" alt="logo" class="w-13 cursor-pointer mr-14">
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-15 font-Ovo">
@@ -26,7 +26,7 @@
             <li><a href="#contact">Contact Me</a></li>
         </ul>
         <div class="flex items-center gap-4">
-            <button><img src="./images/moon_img.png" alt="" class="w-6"></button>
+            <button onclick="toggleTheme()"><img src="./images/moon_img.png" alt="" class="w-6"></button>
             <a href="#contact"
                 class="hidden lg:flex items-center gap-3 px-10 py-2.5  border border-gray-500 rounded-full ml-4 font-Ovo ">Contact
                 <img src="./images/arrow-up.png" alt="arrowup" class="w-3"></a>
@@ -50,7 +50,7 @@
     </nav>
     <!--------------------header---------------->
     <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-        <img src="./images/profile.jpg" alt="" class="rounded-full w-32">
+        <img src="./images/profile.jpg" alt="" class="rounded-full w-32 mt-10">
         <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi! I'm Shivam Raje <img src="./images/wave.png"
                 alt="" class="w-6"></h3>
         <h1 class="text-3xl sm:text-6xl lg:text-[61px] font-outfit font-Ovo">Full Stack Developer </h1>
@@ -84,21 +84,21 @@
                     development.<br>As a Full Stack Developer, I've completed projects that showcase my ability to build
                     functional, user-friendly applications.I'm always eager to take on new challenges in the tech world.
                 </p>
-                <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                     <li
-                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
                         <img src="./images/code.png" alt="" class="w-7 mt-3">
                         <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
                         <p class="text-gray-600 text-sm"> Java, HTML, CSS, JavaScript, SQL</p>
                     </li>
                     <li
-                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[lightHover] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
                         <img src="./images/edu.png" alt="" class="w-7 mt-3">
                         <h3 class="my-4 font-semibold text-gray-700">Education</h3>
                         <p class="text-gray-600 text-sm">B.Tech in Computer Science</p>
                     </li>
                     <li
-                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
                         <img src="./images/suitcase.png" alt="" class="w-7 mt-3">
                         <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
                         <p class="text-gray-600 text-sm">Built more than 4+ projects </p>
@@ -137,7 +137,7 @@
 
         <div class="grid grid-cols-auto gap-6 my-10">
             <div
-                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:text-black hover:bg-lightHover hover:-translate-y-1 duration-500">
                 <img src="./images/Gwslogo.png" alt="" class="w-10">
                 <h3 class="test-lg my-4 text-gray-700 " id="short-text">Global Web Solution</h3>
                 <p class="text-sm text-gray-600 leading-5">At GWS Jalna, I enhanced my skills in full-stack web
@@ -149,11 +149,11 @@
                     internship provided me with valuable experience in real-world project workflows and team
                     collaboration.
                 </p>
-                <a href="#" class="flex items-center gap-2 text-sm mt-5 " id="read-more">Read more <img
+                <a href="#" class="flex items-center gap-2 text-sm mt-5 " id="read-more" >Read more <img
                         src="./images/rightwrrowdarj.png" alt="" class="w-4 "></a>
             </div>
             <div
-                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:text-black hover:bg-lightHover hover:-translate-y-1 duration-500">
                 <img src="./images/Cyberlogo.jfif" alt="" class="w-10">
                 <h3 class="test-lg my-4 text-gray-700" id="short-text1">Cyber Success</h3>
                 <p class="text-sm text-gray-600 leading-5">At Cyber Success Training Institute in Pune, I gained
@@ -202,7 +202,7 @@
             </div>
             </a>
         </div>
-        <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500">Show more
+        <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500">Show more
             <img src="./images/blueright.png" alt="" class="w-4">
         </a>
     </div>
