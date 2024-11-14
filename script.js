@@ -83,3 +83,34 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
         localStorage.theme = 'light';
     }
   }
+
+
+
+  let showMore = document.querySelector("#showmore");
+  let showLess = document.querySelector("#showLess");
+  let fourDiv = document.querySelectorAll("#fourdiv, #fivediv");
+  
+  // Show More button functionality
+  showMore.addEventListener("click", () => {
+      // Remove the 'four' class to show the elements
+      fourDiv.forEach(div => {
+          div.classList.remove("four"); // Show content
+      });
+  
+      // Hide the "Show More" button and show the "Show Less" button
+      showMore.style.display = "none"; // Hide "Show More"
+      showLess.style.display = "inline-flex"; // Show "Show Less"
+  });
+  
+  // Show Less button functionality
+  showLess.addEventListener("click", () => {
+      // Add the 'four' class to hide the elements
+      fourDiv.forEach(div => {
+          div.classList.add("four"); // Hide content
+      });
+  
+      // Hide the "Show Less" button and show the "Show More" button again
+      showLess.style.display = "none"; // Hide "Show Less"
+      showMore.style.display = "inline-flex"; // Show "Show More"
+  });
+  

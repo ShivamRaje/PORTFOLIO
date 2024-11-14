@@ -9,6 +9,7 @@
     <script src="./tailwind.config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 </head>
 
@@ -17,7 +18,9 @@
         <img src="./images/header1.jpg" alt="" class="w-full">
     </div> -->
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-        <img src="./images/letter-s.png" alt="logo" class="w-13 cursor-pointer mr-14">
+        <img src="./images/imageedit_2_4579393912.png" alt="logo" class="logo dark:hidden" >
+        <img src="./images/imageedit_19_5276847548.png" alt="logo" class="logo hidden dark:block">
+
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-15 font-Ovo
         dark:border dark:border-white/50 dark:bg-transparent">
             <li><a href="#top">Home</a></li>
@@ -197,7 +200,7 @@
                 <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
                         <h2 class="font-semibold">
-                            Student Result Management System
+                            Student-Progress-Portal
                         </h2>
                     </div>
                     <div class="border rounded-full border-black w-10 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -207,7 +210,7 @@
             </div>
             </a>
             <!-- Second Box -->
-            <a href="https://rajeshtope.com/portal/" target="_blank">
+            <a href="https://github.com/ShivamRaje/Worker-Data-Maintaining-Website-" target="_blank">
             <div class="aspect-square bg-[url('./images/Worker.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                 <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                     <div>
@@ -236,11 +239,41 @@
                     </div>
                 </div>
                 </a>
+                
+                <a href="#"  id="fourdiv" class="four">
+                    <div class="aspect-square bg-[url('./images/TicTacToebg.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                            <div>
+                                <h2 class="font-semibold">
+                                    Tic Tac Toe
+                                </h2>
+                            </div>
+                            <div class="border rounded-full border-black w-10 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                                <img src="./images/send.png" alt="" class="w-6">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+           
         </div>
-        <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a]">Show more
-            <img src="./images/blueright.png" alt="" class="w-4 dark:hidden">
-            <img src="./images/right-arrow.png" alt="" class="w-4 hidden dark:block">
-        </a>
+        <div class="flex flex-col items-center my-20"> <!-- Parent wrapper for centering -->
+            <a id="showmore" class="flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a]"> 
+                Show More
+                <img src="./images/blueright.png" alt="Right Arrow" class="w-4 dark:hidden">
+                <img src="./images/right-arrow.png" alt="Right Arrow" class="w-4 hidden dark:block">
+            </a>
+            
+            <a id="showLess" class="flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a] hidden"> 
+                Show Less
+                <img src="./images/left-arrow.png" alt="Left Arrow" class="w-4 dark:hidden">
+                <img src="./images/back.png" alt="Left Arrow" class="w-4 hidden dark:block">
+            </a>
+        </div>
+        
+    
+        
+        
+        
     </div>
 
     <!---------------- Contact--------------- -->
@@ -262,7 +295,8 @@
     <!---------------------footer----------------->
     <div class="mt-20">
         <div class="text-center">
-            <img src="./images/letter-s.png" alt="" class="w-20 mx-auto mb-2">
+            <img src="./images/imageedit_2_4579393912.png" alt="" class="w-20 mx-auto mb-2 dark:hidden">
+            <img src="./images/imageedit_19_5276847548.png" alt="logo" class="w-20 mx-auto mb-2 hidden dark:block">
             <div class="w-max flex items-center gap-2 mx-auto">
                 <img src="./images/email.png" alt="" class="w-6 dark:hidden">
                 <img src="./images/email-white.png" alt="" class="w-6  hidden dark:block ">

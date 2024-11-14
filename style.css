@@ -1,0 +1,33 @@
+.four {
+    display: none; /* Hides elements with the 'four' class */
+}
+
+#showLess {
+    display: none; /* Initially hide the "Show Less" button */
+}
+
+.flex {
+    display: flex; /* Ensures flex properties are applied */
+    align-items: center; /* Vertically centers items */
+}
+
+#showmore, #showLess {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+/* styles.css */
+.logo {
+    cursor: pointer;
+    margin-right: 3.5rem; /* Approximate equivalent of `mr-14` in Tailwind */
+    width: 5rem;
+     /* Equivalent of `w-13` */
+    height: 5rem; /* Maintains aspect ratio */
+}
+.logo1{
+    cursor: pointer;
+    margin-right: 3.5rem; /* Approximate equivalent of `mr-14` in Tailwind */
+    width: 5rem;
+     /* Equivalent of `w-13` */
+    height: 5rem; /* Maintains aspect ratio */
+}
+
+
